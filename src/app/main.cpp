@@ -101,6 +101,8 @@ int main( int argc, char **argv )
   }
 #endif
 
+  qputenv( "QML_DISABLE_DISK_CACHE", "1" );
+
   initGraphics();
 
   // Read settings, use a dummy app to get access to QSettings
